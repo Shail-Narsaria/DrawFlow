@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.displayToolsOptionCont{
+    width: 3.5rem;
+    height: 3.5rem; 
+    background-color: beige;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 2rem;
+    left: 2rem;
+    border-radius: 30%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-size: 2rem;
+}
+.toolsCont{
+    display: flex;
+    width: 32rem;
+    height: 4rem;
+    background-color: blanchedalmond;
+    font-size: 3rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 30rem;
+    border-radius: 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    animation: toolsContAni 0.5s;
+}
+@keyframes toolsContAni {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.toolsCont > *{
+    display: block;
+    margin: 0.8rem;
+}
+.penCont{
+    background-color: blanchedalmond;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 5.5rem;
+    width: 9.3rem;
+    position: absolute;
+    top: 6rem;
+    left: 27rem;
+    border-radius: 15%;
+    display: none;
+    animation: toolsContAni 0.5s;
+}
+.selectSize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}
+.selectColor{
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.penColor{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.markerCont{
+    background-color: blanchedalmond;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 5.5rem;
+    width: 9.3rem;
+    position: absolute;
+    top: 6rem;
+    left: 31.5rem;
+    border-radius: 15%;
+    display: none;
+    animation: toolsContAni 0.5s;
+}
+.eraserCont{
+    background-color: blanchedalmond;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 2rem;
+    width: 8.5rem;
+    position: absolute;
+    top: 6rem;
+    left: 33.2rem;
+    border-radius: 15%;
+    padding-top: 0.3rem;
+    display: none;
+    animation: toolsContAni 0.5s;
+}
+.notesCont{
+    height: 13rem;
+    width: 12rem;
+    position: absolute;
+    top: 6rem;
+    left: 45rem;
+}
+.navCont{
+    height: 1.5rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: rgb(186, 217, 238);
+}
+.minimizeBtn{
+    margin-left: 9rem;
+    margin-bottom: 0.5rem;
+}
+.textCont{
+    height: 11.5rem;
+    width: 12rem;
+    display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.cursorPointer:hover{
+    background-color: rgb(249, 203, 134);
+    border-radius: 20%;
+}
